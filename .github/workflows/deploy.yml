@@ -36,7 +36,7 @@ jobs:
 
       - name: Configure production API URL
         working-directory: frontend
-        run: echo "VITE_API_URL=https://project-flow-x1tq.onrender.com/api" > .env.production
+        run: echo "VITE_API_URL=https://codsoft-task1-projectflow.onrender.com/api" > .env.production
 
       - name: Build frontend
         working-directory: frontend
