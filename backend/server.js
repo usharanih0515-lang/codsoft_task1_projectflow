@@ -18,6 +18,12 @@ app.use(cors({
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'ProjectFlow API is running'
+  })
+})
 app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'ProjectFlow API is running' })
 })
@@ -31,3 +37,5 @@ connectDB()
 app.listen(port, () => console.log(`ProjectFlow API listening on port ${port}`))
 
 module.exports = app
+
+
