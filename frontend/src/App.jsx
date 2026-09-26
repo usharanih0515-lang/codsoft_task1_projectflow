@@ -30,7 +30,7 @@ function AuthenticatedRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/codsoft_tasks">
+    <BrowserRouter basename="/codsoft_task1_projectflow">
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
