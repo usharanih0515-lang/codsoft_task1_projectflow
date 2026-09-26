@@ -34,6 +34,10 @@ jobs:
         working-directory: frontend
         run: npm ci
 
+      - name: Configure production API URL
+        working-directory: frontend
+        run: echo "VITE_API_URL=https://project-flow-x1tq.onrender.com/api" > .env.production
+
       - name: Build frontend
         working-directory: frontend
         run: npm run build
